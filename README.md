@@ -41,41 +41,6 @@ CodeGuru is a custom large language model assistant configured with a tailored s
 
 - [Ollama](https://ollama.com) installed on your machine
 - Python 3.8+
-
-### 1. Install Ollama and pull CodeLlama
-
-```bash
-ollama pull codellama
-```
-
-### 2. Create the custom CodeGuru model
-
-```bash
-ollama create codeguru -f modelfile
-```
-
-### 3. Verify the model is running
-
-```bash
-ollama run codeguru
-```
-
-### 4. Install Python dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Launch the app
-
-```bash
-python app.py
-```
-
-The Gradio interface will open at `http://localhost:7860`
-
----
-
 ## How It Works
 
 1. The `modelfile` extends `codellama` with a custom system prompt, giving the model a focused coding tutor persona and setting the temperature to 1 for varied responses.
@@ -99,7 +64,6 @@ The Gradio interface will open at `http://localhost:7860`
 gradio
 langchain
 ```
-
 ---
 
 ## Notes
